@@ -4,10 +4,21 @@ title: Your New Jekyll Site
 ---
 
 <div id="home">
-  <h1>{{ site.title }}</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+	
+  <div class="row"><h1>{{ site.title }}</h1></div>
+  <div class="row">
+	<div class="large-8 columns">
+		<h2>Welcome to Free Geek Twin Cities</h2>
+	</div>
+	<div class="small-4 columns">
+	  <div class="panel">
+	  <h4>Blog Posts:</h4>
+	  <ul class="posts">
+		{% for post in site.posts %}
+		  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	  </ul>
+	  </div>
+	</div>
+  </div>
 </div>

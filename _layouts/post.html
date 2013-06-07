@@ -12,7 +12,7 @@ layout: default
 	<div class="panel">
 		<h4>Tags</h4>
 		{% for tag in page.tags %}
-		  {{ tag }}
+		  <a href="{{ site.url }}/tag/{{tag}}">{{ tag }}</a>
 		{% endfor %}
 	</div>
 </div>
