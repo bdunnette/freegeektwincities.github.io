@@ -8,37 +8,41 @@
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
+		<link rel="stylesheet" href="/css/foundation.css" />
+  
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <!--<link rel="stylesheet" href="/css/main.css">-->
 
+		<script src="js/vendor/custom.modernizr.js"></script>
+  
     </head>
     <body>
 
         <div class="container">
           <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+		    <div class="row">
+				<div class="header large-12">
+				  <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+				  <a class="extra" href="/">home</a>
+				</div>
+			</div>
      
+			<div class="row">
                 {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
+			</div>
+			
+			<div class="row">
+				<div class="footer">
+				  <ul class="vcard">
+					<li class="org">Free Geek Twin Cities</li>
+					<li class="street-address">2537 25th Ave S</li>
+					<li><span class="locality">Minneapolis</span>, <span class="state">MN</span> <span class="zip">55404</span></li>
+					<li class="url"><a href="#">http://freegeektwincities.org</a></li>
+					<li class="email"><a href="#">info@freegeektwincities.org</a></li>
+				  </ul>
+				</div>
+			</div>
           </div>
         </div> <!-- /container -->
 

@@ -4,6 +4,15 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
-<div id="post">
+<div class="large-8 columns" id="post">
 {{ content }}
+</div>
+
+<div class="small-4 columns" id="tags">
+	<div class="panel">
+		<h4>Tags</h4>
+		{% for tag in page.tags %}
+		  {{ tag }}
+		{% endfor %}
+	</div>
 </div>
